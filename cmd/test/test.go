@@ -9,7 +9,6 @@ var name *string
 
 func init() {
   name = helloCmd.Flags().StringP("name", "n", "world", "이름을 적어주세요!")
-  rootCmd.AddCommand(helloCmd)
 }
 
 var helloCmd = &cobra.Command{
