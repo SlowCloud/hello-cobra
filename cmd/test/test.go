@@ -1,4 +1,4 @@
-package cmd
+package test
 
 import (
 	"fmt"
@@ -8,10 +8,10 @@ import (
 var name *string
 
 func init() {
-  name = helloCmd.Flags().StringP("name", "n", "world", "이름을 적어주세요!")
+  name = HelloCmd.Flags().StringP("name", "n", "world", "이름을 적어주세요!")
 }
 
-var helloCmd = &cobra.Command{
+var HelloCmd = &cobra.Command{
   Use: "hello",
   Short: "안녕!",
   Long: "안녕!이라고 말함",
