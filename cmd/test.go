@@ -23,3 +23,5 @@ var helloCmd = &cobra.Command{
     }
   },
 }
+
+var Test string
